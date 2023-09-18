@@ -328,6 +328,9 @@ header .container .menu .main-menu .btn-login {
 }
 @media (min-width: 1600px) {
   .features-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: left;
     margin: 0px 150px;
     padding: 80px 0px;
   }
@@ -336,14 +339,24 @@ header .container .menu .main-menu .btn-login {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  text-align: center;
   padding: 5px;
 }
 @media (min-width: 1200px) {
   .features-section .features-box {
+    align-items: left;
     margin-left: 160px;
     margin-bottom: 200px;
     max-width: 460px;
+  }
+}
+@media (min-width: 1600px) {
+  .features-section .features-box {
+    align-items: left;
+    text-align: left;
+  }
+  .features-section .features-box p {
+    align-self: left;
   }
 }
 .features-section .features-box p {
@@ -354,10 +367,11 @@ header .container .menu .main-menu .btn-login {
   font-family: "DM Sans", sans-serif;
   font-size: 45px;
   font-weight: 700;
-  margin-bottom: 38px;
+  margin-bottom: 35px;
 }
 .features-section .features-box a {
   text-align: center;
+  align-self: center;
 }
 
 .advice {
@@ -372,7 +386,7 @@ header .container .menu .main-menu .btn-login {
   .advice {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-right: 150px;
+    padding-right: 130px;
     margin-right: 100px;
     text-align: left;
   }
