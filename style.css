@@ -46,7 +46,11 @@ html, body {
   font-weight: 600;
   font-size: 16px;
   border-radius: 25px;
-  width: 100%;
+  width: 460px;
+}
+.btn-yellow-wide i {
+  margin-left: 8px;
+  font-size: 0.9rem;
 }
 .btn-yellow-wide:hover {
   background-color: #191919;
@@ -298,23 +302,23 @@ header .container .menu .main-menu .btn-login {
 
 .brands-box {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(1, 1fr);
   justify-items: center;
-  margin-top: 88px;
-  margin-bottom: 126px;
+  align-items: center;
+  gap: 30px;
+  margin: 20px 240px;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .brands-box {
     grid-template-columns: repeat(5, 1fr);
+    margin-top: 88px;
+    margin-bottom: 126px;
   }
 }
 
 .features-section {
-  display: grid;
-  grid-template-columns: 1fr;
   border: 1px solid #DAD9D3;
-  margin: 0px 150px;
-  padding: 80px 0px;
+  margin: 50px 10px;
 }
 @media (min-width: 1200px) {
   .features-section {
@@ -322,13 +326,25 @@ header .container .menu .main-menu .btn-login {
     grid-template-columns: 1fr 1fr;
   }
 }
+@media (min-width: 1600px) {
+  .features-section {
+    margin: 0px 150px;
+    padding: 80px 0px;
+  }
+}
 .features-section .features-box {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 100px;
-  margin-bottom: 200px;
-  max-width: 460px;
+  align-items: center;
+  padding: 5px;
+}
+@media (min-width: 1200px) {
+  .features-section .features-box {
+    margin-left: 160px;
+    margin-bottom: 200px;
+    max-width: 460px;
+  }
 }
 .features-section .features-box p {
   color: #F94D1C;
@@ -340,19 +356,34 @@ header .container .menu .main-menu .btn-login {
   font-weight: 700;
   margin-bottom: 38px;
 }
-.features-section .advice {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  margin-top: 25px;
-  margin-right: 285px;
-  margin-left: -45px;
+.features-section .features-box a {
+  text-align: center;
 }
-.features-section .advice h3 {
+
+.advice {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 45px auto;
+  padding: 20px;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .advice {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-right: 150px;
+    margin-right: 100px;
+    text-align: left;
+  }
+}
+.advice h3 {
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
 }
-.features-section .advice i {
+.advice i {
+  font-size: 1.5rem;
+  margin-top: 15px;
   margin-bottom: 30px;
 }
 
