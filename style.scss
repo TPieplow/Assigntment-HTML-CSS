@@ -131,6 +131,7 @@ html, body {
         background-color: #191919;
         border: 1px solid #191919;
         color: #F0EFE9;
+        transition: 0.3s;
     }
 }
 
@@ -629,10 +630,106 @@ header {
     }
 }
 
+.our-services {
+    background-color: #F0EFE9;
+    margin-top: 120px;
+    padding-bottom: 120px;
+    
+    .container {
+        padding: 15px;
 
+        .services {
+            margin-top: 20px;
+            max-width: 500px;
 
-
-
+            
+            p {
+                color: #F94D1C;
+                font-family: 'Inter', sans-serif;
+                font-size: 18px;
+                font-weight: 500;
+            }
+            
+            h3 {
+                font-family: 'DM Sans', sans-serif;
+                font-size: 45px;
+                font-weight: 700;
+                margin-bottom: 35px;
+            }
+            
+        }
+        
+        .box-container {
+            margin-bottom: 48px;
+            @media (min-width: 768px) {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 10px;
+            }
+            
+            @media (min-width: 1200px) {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 30px;
+                
+            }
+            
+            .box-wrapper {
+                background-color: #FFFFFF;
+                padding: 50px 30px;
+                margin-bottom: 10px;
+                
+                .box {
+                    position: relative;
+                    border: 1px solid transparent;
+                    margin: 25px 0;
+                    padding-top: 20px;
+                    background-color: #FFFFFF;
+                    margin-bottom: 10px;
+                    text-align: left;
+                    
+                    
+                    &:hover {
+                        background-color: #F9D783;
+                        transition: 0.3s;
+                        
+                        a {
+                            color: #FFFFFF;
+                            transition: 0.3s;
+                        }
+                    }
+                    
+                    h3 {
+                        font-family: 'DM Sans', sans-serif;
+                        font-size: 22px;
+                        font-weight: 700;
+                    }
+                    
+                    a {
+                        color: #191919;
+                        font-size: 2.5rem;
+                    }
+                    
+                }
+            }
+            
+            .box::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 8%; /* Ändra storleken på border här!!! */
+                height: 1px;
+                background-color: #000; 
+            }
+            
+            .btn-box {
+                margin: 20px; 
+            }
+            
+        }
+    }
+}
 
 .project {
     .container {
