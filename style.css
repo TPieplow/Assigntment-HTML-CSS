@@ -64,7 +64,7 @@ html, body {
   border: 1px solid #191919;
   color: #FFFFFF;
   text-decoration: none;
-  padding: 15px 30px;
+  padding: 15px 35px;
   font-weight: 600;
   font-size: 16px;
   border-radius: 25px;
@@ -88,7 +88,7 @@ html, body {
 }
 .btn-intro i {
   font-size: 2.5rem;
-  padding-left: 40px;
+  margin-left: 40px;
   padding-right: 25px;
 }
 .btn-intro:hover {
@@ -436,66 +436,159 @@ header .container .menu .main-menu .btn-login {
 .about {
   margin-top: 100px;
 }
+@media (min-width: 1200px) {
+  .about .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-right: 50px;
+  }
+}
 .about .container .position-relative {
   position: relative;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 100%;
 }
-.about .container .sam-info {
+@media (max-width: 576px) {
+  .about .container .position-relative {
+    display: none;
+  }
+}
+.about .container .position-relative .image-container {
+  position: relative;
+}
+.about .container .position-relative .image-container .pen-stroke {
+  position: absolute;
+  top: 38px;
+  left: -30px;
+}
+@media (min-width: 768px) {
+  .about .container .position-relative .image-container .pen-stroke {
+    position: relative;
+    top: 140px;
+    left: -186px;
+  }
+}
+@media (min-width: 992px) {
+  .about .container .position-relative .image-container .pen-stroke {
+    position: absolute;
+    top: 36px;
+    left: 170px;
+  }
+}
+@media (min-width: 1200px) {
+  .about .container .position-relative .image-container .pen-stroke {
+    position: absolute;
+    top: 38px;
+    left: -30px;
+  }
+}
+.about .container .position-relative .image-container .sam-info {
   background-color: #BEEBFF;
   position: absolute;
-  top: 395px;
-  left: -60px;
+  top: 396px;
+  left: -58px;
   width: 370px;
   height: 180px;
   padding-top: 40px;
   padding-bottom: 60px;
   padding-left: 24px;
 }
-.about .container .sam-info h3 {
+@media (min-width: 768px) {
+  .about .container .position-relative .image-container .sam-info {
+    position: absolute;
+    top: 500px;
+    left: 22px;
+  }
+}
+@media (min-width: 992px) {
+  .about .container .position-relative .image-container .sam-info {
+    position: relative;
+    top: -216px;
+    left: 142px;
+  }
+}
+@media (min-width: 1200px) {
+  .about .container .position-relative .image-container .sam-info {
+    position: absolute;
+    top: 396px;
+    left: -58px;
+  }
+}
+.about .container .position-relative .image-container .sam-info h3 {
   font-family: "DM Sans" sans-serif;
   font-size: 22px;
   font-weight: 700;
 }
-.about .container .sam-info h3 .founder-text {
+.about .container .position-relative .image-container .sam-info h3 .founder-text {
   font-family: "DM Sans", sans-serif;
   color: #F94D1C;
   font-size: 16px;
 }
-.about .container .sam-info p {
+.about .container .position-relative .image-container .sam-info p {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
 }
-.about .container .about-company {
-  padding: 5px;
-  padding-right: 100px;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+.about .about-company {
+  margin-top: 40px;
+  text-align: center;
 }
-.about .container .about-company p {
+@media (min-width: 1200px) {
+  .about .about-company {
+    margin: 0;
+    margin-left: 40px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+}
+@media (min-width: 1400px) {
+  .about .about-company {
+    margin: 0;
+    padding: 5px;
+    margin-left: 85px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+}
+.about .about-company p {
   color: #F94D1C;
   font-family: "DM Sans", sans-serif;
   font-size: 18px;
   font-weight: 500;
 }
-.about .container .about-company h3 {
+.about .about-company h3 {
   font-family: "DM Sans", sans-serif;
   font-size: 45px;
   font-weight: 700;
+  padding-right: 3px;
 }
-.about .container .about-company .text {
+.about .about-company .text {
   margin-top: 50px;
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
 }
-.about .container .about-company .button-container {
+.about .about-company .button-container {
   display: flex;
-  margin-top: auto;
+  margin-top: 50px;
   margin-left: 0;
   margin-bottom: 25px;
+  justify-content: center;
   align-items: center;
+}
+@media (min-width: 1200px) {
+  .about .about-company .button-container {
+    display: flex;
+    justify-content: left;
+    margin-top: auto;
+    margin-left: 0;
+    margin-bottom: 25px;
+  }
 }
 
 .project .container .section-title {
