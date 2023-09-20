@@ -80,6 +80,22 @@ html, body {
   transition: 0.3s;
 }
 
+.btn-intro {
+  text-decoration: none;
+  color: #191919;
+  display: flex;
+  align-items: center;
+}
+.btn-intro i {
+  font-size: 2.5rem;
+  padding-left: 40px;
+  padding-right: 25px;
+}
+.btn-intro:hover {
+  color: #191919;
+  transform: scale(1.05);
+}
+
 .btn-box {
   display: flex;
   justify-content: center;
@@ -420,9 +436,6 @@ header .container .menu .main-menu .btn-login {
 .about {
   margin-top: 100px;
 }
-.about .container {
-  border: 1px solid;
-}
 .about .container .position-relative {
   position: relative;
 }
@@ -451,6 +464,38 @@ header .container .menu .main-menu .btn-login {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
+}
+.about .container .about-company {
+  padding: 5px;
+  padding-right: 100px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.about .container .about-company p {
+  color: #F94D1C;
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+.about .container .about-company h3 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+}
+.about .container .about-company .text {
+  margin-top: 50px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.about .container .about-company .button-container {
+  display: flex;
+  margin-top: auto;
+  margin-left: 0;
+  margin-bottom: 25px;
+  align-items: center;
 }
 
 .project .container .section-title {

@@ -88,6 +88,24 @@ html, body {
     }
 }
 
+.btn-intro {
+    text-decoration: none;
+    color: #191919;
+    display: flex;
+    align-items: center;
+
+    i {
+        font-size: 2.5rem;
+        padding-left: 40px;
+        padding-right: 25px;
+    }
+
+    &:hover {
+        color: #191919;
+        transform: scale(1.05);
+    }
+}
+
 .btn-box {
     display: flex;
     justify-content: center;
@@ -450,14 +468,13 @@ header {
 
 .about {
     margin-top: 100px;
-
+    
     .container {
-        border: 1px solid;
-
+        
         .position-relative {
             position: relative;
         }
-
+        
         .sam-info {
             background-color: #BEEBFF;
             position: absolute;
@@ -468,12 +485,12 @@ header {
             padding-top: 40px;
             padding-bottom: 60px;
             padding-left: 24px;
-
+            
             h3 {
                 font-family: 'DM Sans' sans-serif;
                 font-size: 22px;
                 font-weight: 700;
-
+                
                 .founder-text {
                     font-family: 'DM Sans', sans-serif;
                     color: #F94D1C;
@@ -487,6 +504,42 @@ header {
                 
             }
             
+        }
+        .about-company {
+            padding: 5px;
+            padding-right: 100px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            
+            p {
+                color: #F94D1C;
+                font-family: 'DM Sans', sans-serif;
+                font-size: 18px;
+                font-weight: 500;
+            }
+            
+            h3 {
+                font-family: 'DM Sans', sans-serif;
+                font-size: 45px;
+                font-weight: 700;
+            }
+            
+            .text {
+                margin-top: 50px;
+                font-family: 'Inter', sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+            }
+            
+           .button-container {
+            display: flex;
+            margin-top: auto;
+            margin-left: 0;
+            margin-bottom: 25px;
+            align-items: center;
+           }
         }
     }
 }
