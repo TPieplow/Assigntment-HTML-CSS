@@ -676,28 +676,30 @@ header {
             
             .box-wrapper {
                 background-color: #FFFFFF;
-                padding: 50px 30px;
+                padding: 50px 17px;
                 margin-bottom: 10px;
+                // transition: background-color 0.3s; tog bort denna då boxarnas färg inte ändras samtidigt.
+
+                &:hover {
+                    background-color: #F9D783; 
+                    
+                    .box {
+                        background-color: #F9D783; 
+                    }
+
+                    &:hover a {
+                        color: #FFFFFF !important;
+                    }
+                }
                 
                 .box {
                     position: relative;
                     border: 1px solid transparent;
                     margin: 25px 0;
-                    padding-top: 20px;
+                    padding-top: 48px;
                     background-color: #FFFFFF;
                     margin-bottom: 10px;
                     text-align: left;
-                    
-                    
-                    &:hover {
-                        background-color: #F9D783;
-                        transition: 0.3s;
-                        
-                        a {
-                            color: #FFFFFF;
-                            transition: 0.3s;
-                        }
-                    }
                     
                     h3 {
                         font-family: 'DM Sans', sans-serif;
@@ -705,11 +707,20 @@ header {
                         font-weight: 700;
                     }
                     
-                    a {
-                        color: #191919;
-                        font-size: 2.5rem;
+                    .arrow-wrapper {
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+                        
+                        a {
+                            color: #191919;
+                            font-size: 2.5rem;
+                            align-self: flex-end;
+                        }
+                        
                     }
-                    
+
+                  
                 }
             }
             
@@ -718,7 +729,7 @@ header {
                 position: absolute;
                 top: 0;
                 left: 0;
-                width: 8%; /* Ändra storleken på border här!!! */
+                width: 17%; /* Ändra storleken på border här!!! */
                 height: 1px;
                 background-color: #000; 
             }

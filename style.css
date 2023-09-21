@@ -635,41 +635,48 @@ header .container .menu .main-menu .btn-login {
 }
 .our-services .container .box-container .box-wrapper {
   background-color: #FFFFFF;
-  padding: 50px 30px;
+  padding: 50px 17px;
   margin-bottom: 10px;
+}
+.our-services .container .box-container .box-wrapper:hover {
+  background-color: #F9D783;
+}
+.our-services .container .box-container .box-wrapper:hover .box {
+  background-color: #F9D783;
+}
+.our-services .container .box-container .box-wrapper:hover:hover a {
+  color: #FFFFFF !important;
 }
 .our-services .container .box-container .box-wrapper .box {
   position: relative;
   border: 1px solid transparent;
   margin: 25px 0;
-  padding-top: 20px;
+  padding-top: 48px;
   background-color: #FFFFFF;
   margin-bottom: 10px;
   text-align: left;
-}
-.our-services .container .box-container .box-wrapper .box:hover {
-  background-color: #F9D783;
-  transition: 0.3s;
-}
-.our-services .container .box-container .box-wrapper .box:hover a {
-  color: #FFFFFF;
-  transition: 0.3s;
 }
 .our-services .container .box-container .box-wrapper .box h3 {
   font-family: "DM Sans", sans-serif;
   font-size: 22px;
   font-weight: 700;
 }
-.our-services .container .box-container .box-wrapper .box a {
+.our-services .container .box-container .box-wrapper .box .arrow-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.our-services .container .box-container .box-wrapper .box .arrow-wrapper a {
   color: #191919;
   font-size: 2.5rem;
+  align-self: flex-end;
 }
 .our-services .container .box-container .box::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
-  width: 8%; /* Ändra storleken på border här!!! */
+  width: 17%; /* Ändra storleken på border här!!! */
   height: 1px;
   background-color: #000;
 }
