@@ -645,7 +645,7 @@ header {
     }
 }
 
-//Titta på white-thingy när allt annat är klart!
+
 .our-services {
     background-color: #F0EFE9;
     margin-top: 120px;
@@ -656,12 +656,10 @@ header {
         margin: 0 auto;
         padding: 25px;
         
-        
         .btn-box {
             position: relative;
         }
         
-        // Tycker inte att det fungerar helt korrekt här. 
         .white-thingy {
             position: absolute;
             width: auto;
@@ -727,7 +725,7 @@ header {
                 flex-direction: column;
                 align-items: center;
                 text-align: left;
-                // transition: background-color 0.3s; //tog bort denna då boxarnas färg inte ändras samtidigt.
+                transition: background-color 0.2s;
                 
                 @media (max-width: 767px) {
                     display: flex;
@@ -735,19 +733,18 @@ header {
                     align-items: center;
                     text-align: left;
                 }
-                
+
+
                 &:hover {
                     background-color: #F9D783; 
-                    // transition: background-color 0.3s;
                     
                     .box {
                         background-color: #F9D783; 
-                        // transition: background-color 0.3s;
                     }
                     
                     &:hover a {
                         color: #FFFFFF !important;
-                        // transition: background-color 0.3s;
+                        transition: background-color 0.1s;
                     }
                 }
                 
@@ -759,7 +756,8 @@ header {
                     background-color: #FFFFFF;
                     margin-bottom: 10px;
                     text-align: left;
-                    
+                    transition: background-color 0.2s;
+
                     h3 {
                         font-family: 'DM Sans', sans-serif;
                         font-size: 22px;
@@ -780,6 +778,8 @@ header {
                 }
             }
             
+            // Chosed a pseudo-element, as the border is purely decorative.
+            // Could have used border-top-width but don't want to affect the element's dimensions.
             .box::before {
                 content: '';
                 position: absolute;
@@ -800,7 +800,7 @@ header {
             font-weight: 600;
             font-size: 16px;
             border-radius: 25px;
-            z-index: 3; //fick lägga till detta då den vita detaljen krockade med btn.
+            z-index: 3; 
             
             i {
                 margin-left: 8px;
