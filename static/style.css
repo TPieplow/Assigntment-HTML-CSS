@@ -1333,6 +1333,9 @@ footer .relative .container .info .link-wrapper a {
   font-weight: 500;
   text-decoration: none;
 }
+footer .relative .container .info .link-wrapper a:hover {
+  color: #707070;
+}
 footer .copyright {
   display: flex;
   flex-direction: column-reverse;
