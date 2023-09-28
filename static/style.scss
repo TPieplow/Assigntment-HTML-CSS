@@ -374,7 +374,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 72px;
+    margin-top: 90px;
     margin-bottom: 100px;
     
     // https://developer.mozilla.org/en-US/docs/Web/CSS/flex
@@ -396,7 +396,7 @@ header {
 
 .features-section {
     border: 1px solid #DAD9D3;
-    padding: 85px 70px;
+    padding: 100px 70px;
     
     @media (min-width: 1200px) {
         display: grid;
@@ -449,49 +449,49 @@ header {
             text-align: center;
         }
     }
-}
 
-.advice {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 60px;
-    text-align: center;
-    gap: 20px;
-    
-    @media (min-width: 1200px) {
-        padding-right: 50px;
-        margin-right: 50px;
-        text-align: left;
-    }
-    
-    @media (min-width: 1600px) {
-        position: relative;
-        right: 35px;
-        column-gap: 50px;
-        row-gap: 45px;
-    }
-    
-    h3 {
-        font-family: 'DM Sans', sans-serif;
-        font-size: 22px;
-        font-weight: 700;
-    }
-    
-    i {
-        font-size: 1.5rem;
-        margin-top: 5px;
-        margin-bottom: 38px;
-        font-weight: 500;
-    }
-    
-    p {
-        font-family: 'Inter', sans-serif;
-        font-size: 16px;
+    .advice {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 60px;
+        text-align: center;
+        gap: 20px;
+        
+        @media (min-width: 1200px) {
+            padding-right: 50px;
+            margin-right: 50px;
+            text-align: left;
+        }
+        
+        @media (min-width: 1600px) {
+            position: relative;
+            right: 35px;
+            column-gap: 50px;
+            row-gap: 45px;
+        }
+        
+        h3 {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 22px;
+            font-weight: 700;
+        }
+        
+        i {
+            font-size: 1.5rem;
+            margin-top: 5px;
+            margin-bottom: 38px;
+            font-weight: 500;
+        }
+        
+        p {
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+        }
     }
 }
 
 .about {
-    margin-top: 100px;
+    margin-top: 125px;
     
     .container {
         @media (min-width: 1200px) {
@@ -1030,6 +1030,7 @@ header {
             
             .btn-yellow {
                 border: 1px solid #191919;
+                padding: 18px 35px;
             }
             
             h3 {
@@ -1129,7 +1130,6 @@ header {
         .container {
             background-color: #FFFFFF;
             border: 1px solid #FFFFFF;
-            // padding-bottom: 120px;
             
             .section-title {
                 text-align: center;
@@ -1163,7 +1163,7 @@ header {
                 }
                 
                 @media (max-width: 768px) {
-                    border-bottom: 1px solid #7c7c7c;
+                    border-bottom: 1px solid #c7c7c7;
                     margin-bottom: 10px;
                 }
                 
@@ -1177,6 +1177,7 @@ header {
                 .stars {
                     font-size: 20px; 
                     margin-bottom: 10px;
+
                     .star {
                         color: #F94D1C; 
                     }
@@ -1208,6 +1209,7 @@ header {
                     }
                 }
             }
+
             .btn-box {
                 margin-bottom: 120px;
             }
@@ -1293,24 +1295,24 @@ header {
                 padding-top: 10px;
             }
             
-            .ring-container {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding-bottom: 100px;
-            }
-            
-            .ring {
-                width: 10px;
-                height: 10px;
-                background-color: gray;
-                border-radius: 50%;
-                margin: 0 7px;
-            }
-            
-            .ring-1 {
-                background-color: #191919 !important;
-            }
+        }
+        .ring-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 100px;
+        }
+        
+        .ring {
+            width: 10px;
+            height: 10px;
+            background-color: #c7c7c7;
+            border-radius: 50%;
+            margin: 0 7px;
+        }
+        
+        .ring-1 {
+            background-color: #191919 !important;
         }
     }
 }

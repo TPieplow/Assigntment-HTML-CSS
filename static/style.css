@@ -341,7 +341,7 @@ header .container .menu .main-menu .btn-login {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 72px;
+  margin-top: 90px;
   margin-bottom: 100px;
 }
 .brands-box .brand-item {
@@ -360,7 +360,7 @@ header .container .menu .main-menu .btn-login {
 
 .features-section {
   border: 1px solid #DAD9D3;
-  padding: 85px 70px;
+  padding: 100px 70px;
 }
 @media (min-width: 1200px) {
   .features-section {
@@ -414,8 +414,7 @@ header .container .menu .main-menu .btn-login {
 .features-section .features-box a {
   text-align: center;
 }
-
-.advice {
+.features-section .advice {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 60px;
@@ -423,14 +422,14 @@ header .container .menu .main-menu .btn-login {
   gap: 20px;
 }
 @media (min-width: 1200px) {
-  .advice {
+  .features-section .advice {
     padding-right: 50px;
     margin-right: 50px;
     text-align: left;
   }
 }
 @media (min-width: 1600px) {
-  .advice {
+  .features-section .advice {
     position: relative;
     right: 35px;
     -moz-column-gap: 50px;
@@ -438,24 +437,24 @@ header .container .menu .main-menu .btn-login {
     row-gap: 45px;
   }
 }
-.advice h3 {
+.features-section .advice h3 {
   font-family: "DM Sans", sans-serif;
   font-size: 22px;
   font-weight: 700;
 }
-.advice i {
+.features-section .advice i {
   font-size: 1.5rem;
   margin-top: 5px;
   margin-bottom: 38px;
   font-weight: 500;
 }
-.advice p {
+.features-section .advice p {
   font-family: "Inter", sans-serif;
   font-size: 16px;
 }
 
 .about {
-  margin-top: 100px;
+  margin-top: 125px;
 }
 @media (min-width: 1200px) {
   .about .container {
@@ -949,6 +948,7 @@ header .container .menu .main-menu .btn-login {
 }
 .our-team .container .section-title .btn-yellow {
   border: 1px solid #191919;
+  padding: 18px 35px;
 }
 .our-team .container .section-title h3 {
   font-family: "DM Sans", sans-serif;
@@ -1071,7 +1071,7 @@ header .container .menu .main-menu .btn-login {
 }
 @media (max-width: 768px) {
   .testimonial .borders .container .review {
-    border-bottom: 1px solid #7c7c7c;
+    border-bottom: 1px solid #c7c7c7;
     margin-bottom: 10px;
   }
 }
@@ -1186,20 +1186,20 @@ header .container .menu .main-menu .btn-login {
 .article-news .container .text-wrapper p {
   padding-top: 10px;
 }
-.article-news .container .text-wrapper .ring-container {
+.article-news .container .ring-container {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-bottom: 100px;
 }
-.article-news .container .text-wrapper .ring {
+.article-news .container .ring {
   width: 10px;
   height: 10px;
-  background-color: gray;
+  background-color: #c7c7c7;
   border-radius: 50%;
   margin: 0 7px;
 }
-.article-news .container .text-wrapper .ring-1 {
+.article-news .container .ring-1 {
   background-color: #191919 !important;
 }
 
