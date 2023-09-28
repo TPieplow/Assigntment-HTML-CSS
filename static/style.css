@@ -1217,8 +1217,7 @@ header .container .menu .main-menu .btn-login {
 .newsletter .container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
 }
 @media (min-width: 1200px) {
   .newsletter .container {

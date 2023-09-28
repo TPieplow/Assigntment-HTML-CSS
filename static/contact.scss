@@ -1,5 +1,5 @@
-@forward 'style.scss';
-
+// @use 'style.scss';
+@use 'global';
 
 .showcase {
     .sc-white-stroke {
