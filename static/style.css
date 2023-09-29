@@ -358,63 +358,63 @@ header .container .menu .main-menu .btn-login {
   height: auto;
 }
 
-.features-section {
+.features-section .borders {
   border: 1px solid #DAD9D3;
-  padding: 100px 70px;
+  margin: 0 8%;
+  padding: 50px 0px;
+}
+.features-section .borders .container {
+  margin-top: 80px;
 }
 @media (min-width: 1200px) {
-  .features-section {
+  .features-section .borders .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-top: 50px 20px;
   }
 }
 @media (min-width: 1600px) {
-  .features-section {
+  .features-section .borders .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: flex-start;
-    margin: 0px 100px;
   }
 }
-.features-section .features-box {
+.features-section .borders .section-title {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: center;
   padding: 5px;
 }
 @media (min-width: 1200px) {
-  .features-section .features-box {
-    align-items: left;
+  .features-section .borders .section-title {
+    align-items: flex-start;
+    text-align: left;
     margin-left: 50px;
-    margin-bottom: 200px;
+    margin-right: 50px;
+    margin-bottom: 50px;
     max-width: 460px;
   }
 }
 @media (min-width: 1600px) {
-  .features-section .features-box {
+  .features-section .borders .section-title {
     margin-left: 100px;
     align-items: flex-start;
     text-align: left;
+    margin-bottom: 200px;
   }
 }
-.features-section .features-box p {
-  color: #F94D1C;
-  margin-bottom: 35px;
-  max-width: 250px;
-}
-.features-section .features-box h3 {
-  font-family: "DM Sans", sans-serif;
-  font-size: 45px;
-  font-weight: 700;
+.features-section .borders .section-title p {
   margin-bottom: 35px;
 }
-.features-section .features-box a {
+.features-section .borders .section-title h2 {
+  margin-bottom: 35px;
+}
+.features-section .borders .section-title a {
   text-align: center;
 }
-.features-section .advice {
+.features-section .borders .advice {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 60px;
@@ -422,39 +422,34 @@ header .container .menu .main-menu .btn-login {
   gap: 20px;
 }
 @media (min-width: 1200px) {
-  .features-section .advice {
-    padding-right: 50px;
-    margin-right: 50px;
+  .features-section .borders .advice {
+    padding-right: 25px;
+    margin-right: 25px;
     text-align: left;
   }
 }
 @media (min-width: 1600px) {
-  .features-section .advice {
-    position: relative;
+  .features-section .borders .advice {
     right: 35px;
     -moz-column-gap: 50px;
          column-gap: 50px;
     row-gap: 45px;
   }
 }
-.features-section .advice h3 {
+.features-section .borders .advice h3 {
   font-family: "DM Sans", sans-serif;
   font-size: 22px;
   font-weight: 700;
 }
-.features-section .advice i {
-  font-size: 1.5rem;
+.features-section .borders .advice i {
+  font-size: 2rem;
   margin-top: 5px;
   margin-bottom: 38px;
   font-weight: 500;
 }
-.features-section .advice p {
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-}
 
 .about {
-  margin-top: 125px;
+  margin-top: 120px;
 }
 @media (min-width: 1200px) {
   .about .container {
@@ -474,36 +469,41 @@ header .container .menu .main-menu .btn-login {
     display: none;
   }
 }
-.about .container .position-relative .image-container {
+.about .container .position-relative .image-box {
   position: relative;
 }
-.about .container .position-relative .image-container .pen-stroke {
+@media (min-width: 992px) and (max-width: 1200px) {
+  .about .container .position-relative .image-box {
+    margin-bottom: -150px;
+  }
+}
+.about .container .position-relative .image-box .pen-stroke {
   position: absolute;
   top: 38px;
   left: -30px;
 }
 @media (min-width: 768px) {
-  .about .container .position-relative .image-container .pen-stroke {
+  .about .container .position-relative .image-box .pen-stroke {
     position: relative;
     top: 140px;
     left: -186px;
   }
 }
 @media (min-width: 992px) {
-  .about .container .position-relative .image-container .pen-stroke {
+  .about .container .position-relative .image-box .pen-stroke {
     position: absolute;
     top: 36px;
     left: 170px;
   }
 }
 @media (min-width: 1200px) {
-  .about .container .position-relative .image-container .pen-stroke {
+  .about .container .position-relative .image-box .pen-stroke {
     position: absolute;
     top: 38px;
     left: -30px;
   }
 }
-.about .container .position-relative .image-container .sam-info {
+.about .container .position-relative .image-box .sam-info {
   background-color: #BEEBFF;
   position: absolute;
   top: 396px;
@@ -515,97 +515,74 @@ header .container .menu .main-menu .btn-login {
   padding-left: 24px;
 }
 @media (min-width: 768px) {
-  .about .container .position-relative .image-container .sam-info {
+  .about .container .position-relative .image-box .sam-info {
     position: absolute;
     top: 500px;
     left: 22px;
   }
 }
 @media (min-width: 992px) {
-  .about .container .position-relative .image-container .sam-info {
+  .about .container .position-relative .image-box .sam-info {
     position: relative;
     top: -216px;
     left: 142px;
   }
 }
 @media (min-width: 1200px) {
-  .about .container .position-relative .image-container .sam-info {
+  .about .container .position-relative .image-box .sam-info {
     position: absolute;
     top: 396px;
     left: -58px;
   }
 }
-.about .container .position-relative .image-container .sam-info h3 {
+.about .container .position-relative .image-box .sam-info h3 {
   font-family: "DM Sans" sans-serif;
   font-size: 22px;
   font-weight: 700;
 }
-.about .container .position-relative .image-container .sam-info h3 .founder-text {
+.about .container .position-relative .image-box .sam-info h3 .founder-text {
   font-family: "DM Sans", sans-serif;
   color: #F94D1C;
   font-size: 16px;
   font-weight: 700;
 }
-.about .container .position-relative .image-container .sam-info p {
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-}
 .about .about-company {
-  margin-top: 40px;
   text-align: center;
+}
+@media (max-width: 1200px) {
+  .about .about-company {
+    margin-top: 80px;
+  }
 }
 @media (min-width: 1200px) {
   .about .about-company {
     margin: 0;
-    margin-left: 40px;
+    margin-left: 80px;
     text-align: left;
     display: flex;
     flex-direction: column;
-    height: 100%;
   }
 }
 @media (min-width: 1400px) {
   .about .about-company {
-    margin: 0;
-    padding: 5px;
     margin-left: 85px;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
   }
 }
-.about .about-company p {
-  color: #F94D1C;
-  font-family: "DM Sans", sans-serif;
-  font-size: 18px;
-  font-weight: 500;
-}
-.about .about-company h3 {
-  font-family: "DM Sans", sans-serif;
-  font-size: 45px;
-  font-weight: 700;
-  padding-right: 3px;
+.about .about-company .section-title {
+  padding: 0;
+  margin-bottom: 20px;
 }
 .about .about-company .text {
-  margin-top: 50px;
+  margin-bottom: 85px;
 }
-.about .about-company .button-container {
-  display: flex;
-  margin-top: 50px;
-  margin-left: 0;
-  margin-bottom: 25px;
-  justify-content: center;
-  align-items: center;
+.about .about-company .text p {
+  margin-bottom: 30px;
+  line-height: 2;
 }
 @media (min-width: 1200px) {
-  .about .about-company .button-container {
+  .about .about-company .btn-box {
     display: flex;
-    justify-content: left;
-    margin-top: auto;
-    margin-left: 0;
-    margin-bottom: 25px;
+    justify-content: flex-start;
   }
 }
 
@@ -619,9 +596,6 @@ header .container .menu .main-menu .btn-login {
   margin: 0 auto;
   padding: 25px;
 }
-.our-services .container .btn-box {
-  position: relative;
-}
 .our-services .container .white-thingy {
   position: absolute;
   width: auto;
@@ -633,27 +607,8 @@ header .container .menu .main-menu .btn-login {
   width: auto;
   max-width: 100%;
 }
-.our-services .container .content-services {
-  margin-top: 20px;
-  max-width: 500px;
-  text-align: center;
-}
-@media (min-width: 769px) {
-  .our-services .container .content-services {
-    text-align: left;
-  }
-}
-.our-services .container .content-services p {
-  color: #F94D1C;
-  font-family: "Inter", sans-serif;
-  font-size: 18px;
-  font-weight: 500;
-}
-.our-services .container .content-services h3 {
-  font-family: "DM Sans", sans-serif;
-  font-size: 45px;
-  font-weight: 700;
-  margin-bottom: 35px;
+.our-services .container .section-title {
+  padding-bottom: 50px;
 }
 .our-services .container .box-container {
   margin-bottom: 40px;
@@ -679,21 +634,12 @@ header .container .menu .main-menu .btn-login {
 }
 .our-services .container .box-container .box-wrapper {
   background-color: #FFFFFF;
-  padding: 50px 17px;
-  margin-bottom: 10px;
+  padding: 25px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: left;
   transition: background-color 0.2s;
-}
-@media (max-width: 767px) {
-  .our-services .container .box-container .box-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: left;
-  }
 }
 .our-services .container .box-container .box-wrapper:hover {
   background-color: #F9D783;
@@ -708,12 +654,11 @@ header .container .menu .main-menu .btn-login {
 .our-services .container .box-container .box-wrapper .box {
   position: relative;
   border: 1px solid transparent;
-  margin: 25px 0;
+  margin: 15px 5px;
   padding-top: 48px;
   background-color: #FFFFFF;
-  margin-bottom: 10px;
-  text-align: left;
   transition: background-color 0.2s;
+  line-height: 2;
 }
 .our-services .container .box-container .box-wrapper .box h3 {
   font-family: "DM Sans", sans-serif;
@@ -729,6 +674,7 @@ header .container .menu .main-menu .btn-login {
   color: #191919;
   font-size: 2.5rem;
   align-self: flex-end;
+  margin-right: 10px;
 }
 .our-services .container .box-container .box::before {
   content: "";
@@ -738,6 +684,7 @@ header .container .menu .main-menu .btn-login {
   width: 17%;
   height: 1.5px;
   background-color: #000;
+  margin-top: 10px;
 }
 .our-services .container .btn-transparent2 {
   background-color: transparent;
@@ -1064,8 +1011,6 @@ header .container .menu .main-menu .btn-login {
 }
 @media (min-width: 768px) {
   .testimonial .borders .container .review {
-    display: flex;
-    flex-direction: column-reverse;
     border: 1px solid #c7c7c7;
   }
 }
@@ -1077,7 +1022,6 @@ header .container .menu .main-menu .btn-login {
 }
 @media (min-width: 1200px) {
   .testimonial .borders .container .review {
-    display: flex;
     flex-direction: column;
     padding: 5px 30px;
     border: none;
@@ -1099,7 +1043,6 @@ header .container .menu .main-menu .btn-login {
   align-self: center;
 }
 .testimonial .borders .container .review .client .title {
-  display: flex;
   flex-direction: column;
   text-align: left;
   line-height: 1.5;
