@@ -30,7 +30,7 @@ function updateSlider() {
     //     slidesHTML += `<div class="slide">...</div>`;
     // }
 
-    // Räknar ut hur många tal som ska visas, max 5 eller färre om vi är nära slutet
+    // Räknar ut hur många tal som ska visas, max 5 och minst 3 om vi är nära slutet
     const numTalToShow = Math.min(maxSlide - currentSlide + 1, 3);
     
 
