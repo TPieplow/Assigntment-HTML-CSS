@@ -879,7 +879,7 @@ header .container .menu .main-menu .btn-login {
   font-weight: 900;
 }
 .project .container .project-cases .articles:hover img {
-  transform: scale(1.05);
+  transform: scale(0.98);
   transition: 0.3s;
 }
 .project .container .btn-box {
