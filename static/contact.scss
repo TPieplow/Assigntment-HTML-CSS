@@ -1,5 +1,4 @@
-// @use 'style.scss';
-@use 'contact.scss';
+@use 'style.scss';
 
 .showcase {
     .sc-white-stroke {
@@ -109,12 +108,13 @@
                 border: none;
             }
             
-            textarea {
+            .textarea {
                 margin-top: 15px;
                 border-radius: 30px;
                 padding: 15px 25px;
                 border: none;
                 height: 150px;
+                resize: none;
             }
             
             .btn-yellow {

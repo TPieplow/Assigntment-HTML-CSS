@@ -17,7 +17,7 @@
         <header>          
             <div class="container">
                 <a href="index.html"><img src="images/logo_crito.svg" alt="crito logo"></a>
-                <button class="menu-bars"><i class="fa-solid fa-bars-staggered"></i></button>
+                <button class="menu-bars"><i class="fa-solid fa-bars-staggered" title="folded menu-bar"></i></button>
                 <div class="menu">
                     <div class="top-menu">
                         <div class="contact-info">
@@ -108,17 +108,17 @@
                         <div class="title">
                             <h2>Leave us a message <br> for any information.</h2>
                         </div>
-                        <input type="text" placeholder="Name*" name="name">
-                        <input type="email" placeholder="Email*" name="email">
-                        <textarea type="text" placeholder="Your Message*" name="message"></textarea>
-                        <button type="submit"  class="btn-yellow">Send Message<i class="fa-solid fa-arrow-up-right"></i></button>
+                        <input type="text" id="name" placeholder="Name*" name="name" title="Enter your name" required autocomplete="off" tabindex="1">
+                        <input type="email" id="email" placeholder="Email*" name="email" title="Enter your email" required autocomplete="off" tabindex="2">
+                        <textarea class="textarea" id="message" placeholder="Enter Your Message*" name="message" title="Your message" required autocomplete="off" tabindex="3"></textarea>
+                        <button type="submit"  class="btn-yellow" title="Submit the form" tabindex="4">Send Message<i class="fa-solid fa-arrow-up-right"></i></button>
                     </form>
                 </div>
             </section>
 
             <section class="iframe-section">
                 <div class="iframe-div">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16277.684123042985!2d18.0377528474884!3d59.33778677471624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d6799554e87%3A0x6562d2c842903003!2sSveav%C3%A4gen%2031%2C%20111%2034%20Stockholm!5e0!3m2!1ssv!2sse!4v1695811481336!5m2!1ssv!2sse" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16277.684123042985!2d18.0377528474884!3d59.33778677471624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d6799554e87%3A0x6562d2c842903003!2sSveav%C3%A4gen%2031%2C%20111%2034%20Stockholm!5e0!3m2!1ssv!2sse!4v1695811481336!5m2!1ssv!2sse" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Karta över företagets adress i Stockholm"></iframe>
                 </div>
             </section>
 
