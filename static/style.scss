@@ -60,7 +60,7 @@ html, body {
         background-color: #191919;
         border: 1px solid #191919;
         color: #F0EFE9;
-        transition: 0.3s;
+        transition: 0.3s ease-in-out;
     }
 }
 
@@ -86,7 +86,7 @@ html, body {
         background-color: #191919;
         border: 1px solid #191919;
         color: #F0EFE9;
-        transition: 0.3s;
+        transition: 0.3s ease-in-out;
     }
 }
 
@@ -109,7 +109,7 @@ html, body {
         background-color: #FFFFFF;
         border: 1px solid #191919;
         color: #191919;
-        transition: 0.3s;
+        transition: 0.3s ease-in-out;
     }
 }
 
@@ -162,7 +162,7 @@ html, body {
         background-color: #191919;
         border: 1px solid #191919;
         color: #F0EFE9;
-        transition: 0.3s;
+        transition: 0.3s ease-in-out;
     }
 }
 
@@ -696,7 +696,7 @@ header {
                 flex-direction: column;
                 align-items: center;
                 text-align: left;
-                transition: background-color 0.2s;
+                transition: background-color 0.2s ease-in-out;
                 
                 &:hover {
                     background-color: #F9D783; 
@@ -707,7 +707,7 @@ header {
                     
                     &:hover a {
                         color: #FFFFFF !important;
-                        transition: background-color 0.1s;
+                        transition: background-color 0.1s ease-in-out;
                     }
                 }
                 
@@ -717,7 +717,7 @@ header {
                     margin: 15px 5px;
                     padding-top: 48px;
                     background-color: #FFFFFF;
-                    transition: background-color 0.2s;
+                    transition: background-color 0.2s ease-in-out;
                     line-height: 2;
                     
                     h3 {
@@ -775,7 +775,7 @@ header {
                 background-color: #191919;
                 border: 1px solid #191919;
                 color: #F0EFE9;
-                transition: 0.3s;
+                transition: 0.3s ease-in-out;
             }
         }    
     }
@@ -788,7 +788,7 @@ header {
     .gray-div {
         display: none;
         position: absolute;
-        background-color: #DAD9D3;
+        background-color: #F0EFE9;
         width: 54%;
         height: 60%;
         bottom: 0;
@@ -953,7 +953,7 @@ header {
                 
                 &:hover img {
                     transform: scale(0.98);
-                    transition: 0.3s;
+                    transition: 0.3s ease-in-out;
                 }
             }
         }
@@ -1053,7 +1053,7 @@ header {
             
             .member:hover img {
                 transform: scale(1.05);
-                transition: 0.3s;
+                transition: 0.3s ease-in-out;
             }
         }
         .ring-container {
@@ -1243,7 +1243,7 @@ header {
             
             &:hover {
                 transform: scale(1.04);
-                transition: 0.2s;
+                transition: 0.2s ease-in-out;
             }
             
             p {

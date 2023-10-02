@@ -1,0 +1,93 @@
+@import url("https://unpkg.com/open-props/normalize.min.css");
+@import url("https://unpkg.com/open-props/open-props.min.css");
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background-color: #121212;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .text {
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .text a {
+  text-decoration: none;
+}
+.container .loader {
+  display: flex;
+  flex-direction: row;
+  gap: var(--size-2);
+  margin-top: 50px;
+}
+.container .loader span {
+  --speed: 0.65;
+  --count: 6;
+  --delay: calc(sin((var(--index) / var(--count)) * 55deg) * var(--speed) * -1s);
+  height: 3vmin;
+  width: 3vmin;
+  aspect-ratio: 1;
+  background: #ff00FF;
+  border-radius: 50%;
+  animation: jump calc(var(--speed) * 1s) var(--delay) infinite ease-in-out;
+}
+.container .loader span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit;
+  box-shadow: 0 0 10px rgba(255, 0, 255, 0.8);
+}
+@keyframes jump {
+  50% {
+    translate: 0 -100%;
+  }
+}
+.container span:nth-of-type(1) {
+  background: #00ff00;
+}
+.container span:nth-of-type(1)::before {
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.8);
+}
+.container span:nth-of-type(2) {
+  background: #ffcc00;
+}
+.container span:nth-of-type(2)::before {
+  box-shadow: 0 0 10px rgba(255, 204, 0, 0.8);
+}
+.container span:nth-of-type(3) {
+  background: #ff0000;
+}
+.container span:nth-of-type(3)::before {
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+}
+.container span:nth-of-type(4) {
+  background: #cc00ff;
+}
+.container span:nth-of-type(4)::before {
+  box-shadow: 0 0 10px rgba(204, 0, 255, 0.8);
+}
+.container span:nth-of-type(5) {
+  background: #3300ff;
+}
+.container span:nth-of-type(5)::before {
+  box-shadow: 0 0 10px rgba(51, 0, 255, 0.8);
+}
+.container span:nth-of-type(6) {
+  background: #00ffcc;
+}
+.container span:nth-of-type(6)::before {
+  box-shadow: 0 0 10px rgba(0, 255, 204, 0.8);
+}

@@ -63,7 +63,7 @@ html, body {
   background-color: #191919;
   border: 1px solid #191919;
   color: #F0EFE9;
-  transition: 0.3s;
+  transition: 0.3s ease-in-out;
 }
 
 .btn-yellow-wide {
@@ -86,7 +86,7 @@ html, body {
   background-color: #191919;
   border: 1px solid #191919;
   color: #F0EFE9;
-  transition: 0.3s;
+  transition: 0.3s ease-in-out;
 }
 
 .btn-black {
@@ -107,7 +107,7 @@ html, body {
   background-color: #FFFFFF;
   border: 1px solid #191919;
   color: #191919;
-  transition: 0.3s;
+  transition: 0.3s ease-in-out;
 }
 
 .btn-intro {
@@ -155,7 +155,7 @@ html, body {
   background-color: #191919;
   border: 1px solid #191919;
   color: #F0EFE9;
-  transition: 0.3s;
+  transition: 0.3s ease-in-out;
 }
 
 .section-title {
@@ -654,7 +654,7 @@ header .container .menu .main-menu .btn-login {
   flex-direction: column;
   align-items: center;
   text-align: left;
-  transition: background-color 0.2s;
+  transition: background-color 0.2s ease-in-out;
 }
 .our-services .container .box-container .box-wrapper:hover {
   background-color: #F9D783;
@@ -664,7 +664,7 @@ header .container .menu .main-menu .btn-login {
 }
 .our-services .container .box-container .box-wrapper:hover:hover a {
   color: #FFFFFF !important;
-  transition: background-color 0.1s;
+  transition: background-color 0.1s ease-in-out;
 }
 .our-services .container .box-container .box-wrapper .box {
   position: relative;
@@ -672,7 +672,7 @@ header .container .menu .main-menu .btn-login {
   margin: 15px 5px;
   padding-top: 48px;
   background-color: #FFFFFF;
-  transition: background-color 0.2s;
+  transition: background-color 0.2s ease-in-out;
   line-height: 2;
 }
 .our-services .container .box-container .box-wrapper .box h3 {
@@ -720,7 +720,7 @@ header .container .menu .main-menu .btn-login {
   background-color: #191919;
   border: 1px solid #191919;
   color: #F0EFE9;
-  transition: 0.3s;
+  transition: 0.3s ease-in-out;
 }
 
 .why-choose-us {
@@ -730,7 +730,7 @@ header .container .menu .main-menu .btn-login {
 .why-choose-us .gray-div {
   display: none;
   position: absolute;
-  background-color: #DAD9D3;
+  background-color: #F0EFE9;
   width: 54%;
   height: 60%;
   bottom: 0;
@@ -880,7 +880,7 @@ header .container .menu .main-menu .btn-login {
 }
 .project .container .project-cases .articles:hover img {
   transform: scale(0.98);
-  transition: 0.3s;
+  transition: 0.3s ease-in-out;
 }
 .project .container .btn-box {
   margin-top: 45px;
@@ -965,7 +965,7 @@ header .container .menu .main-menu .btn-login {
 }
 .our-team .container .team .member:hover img {
   transform: scale(1.05);
-  transition: 0.3s;
+  transition: 0.3s ease-in-out;
 }
 .our-team .container .ring-container {
   display: flex;
@@ -1139,7 +1139,7 @@ header .container .menu .main-menu .btn-login {
 }
 .article-news .container .text-wrapper:hover {
   transform: scale(1.04);
-  transition: 0.2s;
+  transition: 0.2s ease-in-out;
 }
 .article-news .container .text-wrapper p {
   padding-top: 10px;
