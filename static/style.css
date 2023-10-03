@@ -127,6 +127,7 @@ html, body {
 .btn-intro:hover {
   color: #191919;
   transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
 }
 
 .btn-box {
@@ -253,6 +254,7 @@ header .container .menu .top-menu .social-media a {
 }
 header .container .menu .top-menu .social-media a:hover {
   color: #7c7c7c;
+  transition: 0.2s ease-in-out;
 }
 header .container .menu .main-menu {
   display: flex;
@@ -388,8 +390,13 @@ header .container .menu .main-menu .btn-login {
 
 .features-section .borders {
   border: 1px solid #DAD9D3;
-  margin: 0 8%;
+  margin: 0 4%;
   padding: 50px 0px;
+}
+@media (min-width: 1200px) {
+  .features-section .borders {
+    margin: 0 8%;
+  }
 }
 .features-section .borders .container {
   margin-top: 80px;
@@ -664,9 +671,9 @@ header .container .menu .main-menu .btn-login {
 }
 .our-services .container .box-container .box-wrapper:hover:hover a {
   color: #FFFFFF !important;
-  transition: background-color 0.1s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
 }
-.our-services .container .box-container .box-wrapper .box {
+.our-services .container .box-container .box {
   position: relative;
   border: 1px solid transparent;
   margin: 15px 5px;
@@ -675,23 +682,23 @@ header .container .menu .main-menu .btn-login {
   transition: background-color 0.2s ease-in-out;
   line-height: 2;
 }
-.our-services .container .box-container .box-wrapper .box h3 {
+.our-services .container .box-container .box h3 {
   font-family: "DM Sans", sans-serif;
   font-size: 22px;
   font-weight: 700;
 }
-.our-services .container .box-container .box-wrapper .box .arrow-wrapper {
+.our-services .container .box-container .box .arrow-wrapper {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-.our-services .container .box-container .box-wrapper .box .arrow-wrapper a {
+.our-services .container .box-container .box .arrow-wrapper a {
   color: #191919;
   font-size: 2.5rem;
   align-self: flex-end;
   margin-right: 10px;
 }
-.our-services .container .box-container .box::before {
+.our-services .container .box::before {
   content: "";
   position: absolute;
   top: 0;
@@ -701,7 +708,7 @@ header .container .menu .main-menu .btn-login {
   background-color: #000;
   margin-top: 10px;
 }
-.our-services .container .btn-transparent2 {
+.our-services .btn-transparent2 {
   background-color: transparent;
   border: 1px solid #191919;
   color: #191919;
@@ -712,11 +719,11 @@ header .container .menu .main-menu .btn-login {
   border-radius: 25px;
   z-index: 3;
 }
-.our-services .container .btn-transparent2 i {
+.our-services .btn-transparent2 i {
   margin-left: 8px;
   font-size: 0.9rem;
 }
-.our-services .container .btn-transparent2:hover {
+.our-services .btn-transparent2:hover {
   background-color: #191919;
   border: 1px solid #191919;
   color: #F0EFE9;
@@ -733,7 +740,7 @@ header .container .menu .main-menu .btn-login {
   background-color: #F0EFE9;
   width: 54%;
   height: 60%;
-  bottom: 0;
+  bottom: 25px;
   right: 0;
   max-width: 100%;
 }
@@ -877,6 +884,7 @@ header .container .menu .main-menu .btn-login {
 }
 .project .container .project-cases .articles:hover .read-more {
   font-weight: 900;
+  transition: 0.3s ease-in-out;
 }
 .project .container .project-cases .articles:hover img {
   transform: scale(0.98);
@@ -1168,9 +1176,15 @@ header .container .menu .main-menu .btn-login {
   padding-bottom: 80px;
 }
 .newsletter .squiggly-newsletter {
+  display: none;
   position: absolute;
   bottom: 50px;
   right: 0;
+}
+@media (min-width: 776px) {
+  .newsletter .squiggly-newsletter {
+    display: block;
+  }
 }
 .newsletter .container {
   display: flex;
@@ -1292,6 +1306,7 @@ footer .relative .container .info .link-wrapper a {
 }
 footer .relative .container .info .link-wrapper a:hover {
   color: #707070;
+  transition: 0.2s ease-in-out;
 }
 footer .copyright {
   display: flex;
@@ -1313,4 +1328,5 @@ footer .copyright .social-media a {
 }
 footer .copyright .social-media a:hover {
   color: #7c7c7c;
+  transition: 0.2s ease-in-out;
 }

@@ -21,15 +21,15 @@ html, body {
     @media (min-width: 576px) {
         max-width: 550px;
     }
-
+    
     @media (min-width: 768px) {
         max-width: 740px;
     }
-
+    
     @media (min-width: 1200px) {
         max-width: 1140px;
     }
-
+    
     @media (min-width: 1400px) {
         max-width: 1320px;
     }
@@ -132,6 +132,7 @@ html, body {
     &:hover {
         color: #191919;
         transform: scale(1.05);
+        transition: transform 0.2s ease-in-out;
     }
 }
 
@@ -264,6 +265,7 @@ header {
                         
                         &:hover {
                             color: #7c7c7c;
+                            transition: 0.2s ease-in-out;
                         }
                     }
                 }
@@ -422,8 +424,12 @@ header {
     
     .borders {
         border: 1px solid #DAD9D3;
-        margin: 0 8%;
+        margin: 0 4%;
         padding: 50px 0px;
+        
+        @media (min-width: 1200px) {
+            margin: 0 8%;
+        }
         
         .container {
             margin-top: 80px;
@@ -575,7 +581,7 @@ header {
                         top: 500px; 
                         left: 22px; 
                     }
-
+                    
                     @media (min-width: 1200px) {
                         position: absolute;
                         top: 396px;
@@ -602,7 +608,7 @@ header {
     .about-company {
         text-align: center;
         margin-top: 80px;
-
+        
         @media (min-width: 992px) {
             margin-top: 240px;
         }
@@ -707,78 +713,79 @@ header {
                     
                     &:hover a {
                         color: #FFFFFF !important;
-                        transition: background-color 0.1s ease-in-out;
+                        transition: background-color 0.2s ease-in-out;
+                        // Försökte färga pilen svart men blev svart runtom också. 
                     }
+                }
+            }
+            
+            .box {
+                position: relative;
+                border: 1px solid transparent;
+                margin: 15px 5px;
+                padding-top: 48px;
+                background-color: #FFFFFF;
+                transition: background-color 0.2s ease-in-out;
+                line-height: 2;
+                
+                h3 {
+                    font-family: 'DM Sans', sans-serif;
+                    font-size: 22px;
+                    font-weight: 700;
                 }
                 
-                .box {
-                    position: relative;
-                    border: 1px solid transparent;
-                    margin: 15px 5px;
-                    padding-top: 48px;
-                    background-color: #FFFFFF;
-                    transition: background-color 0.2s ease-in-out;
-                    line-height: 2;
+                .arrow-wrapper {
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
                     
-                    h3 {
-                        font-family: 'DM Sans', sans-serif;
-                        font-size: 22px;
-                        font-weight: 700;
-                    }
-                    
-                    .arrow-wrapper {
-                        display: flex;
-                        justify-content: flex-end;
-                        align-items: center;
-                        
-                        a {
-                            color: #191919;
-                            font-size: 2.5rem;
-                            align-self: flex-end;
-                            margin-right: 10px;
-                        }
+                    a {
+                        color: #191919;
+                        font-size: 2.5rem;
+                        align-self: flex-end;
+                        margin-right: 10px;
                     }
                 }
             }
-            
-            // Chosed a pseudo-element, as the border is purely decorative.
-            // Could have used border-top-width but don't want to affect the element's dimensions.
-            .box::before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 17%;
-                height: 1.5px;
-                background-color: #000; 
-                margin-top: 10px;
-            } 
         }
         
-        .btn-transparent2 {
-            background-color: transparent;
-            border: 1px solid #191919;
-            color: #191919;
-            text-decoration: none;
-            padding: 15px 30px;
-            font-weight: 600;
-            font-size: 16px;
-            border-radius: 25px;
-            z-index: 3; 
-            
-            i {
-                margin-left: 8px;
-                font-size: 0.9rem;
-            }
-            
-            &:hover {
-                background-color: #191919;
-                border: 1px solid #191919;
-                color: #F0EFE9;
-                transition: 0.3s ease-in-out;
-            }
-        }    
+        // Chosed a pseudo-element, as the border is purely decorative.
+        // Could have used border-top-width but don't want to affect the element's dimensions.
+        .box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 17%;
+            height: 1.5px;
+            background-color: #000; 
+            margin-top: 10px;
+        } 
     }
+    
+    .btn-transparent2 {
+        background-color: transparent;
+        border: 1px solid #191919;
+        color: #191919;
+        text-decoration: none;
+        padding: 15px 30px;
+        font-weight: 600;
+        font-size: 16px;
+        border-radius: 25px;
+        z-index: 3; 
+        
+        i {
+            margin-left: 8px;
+            font-size: 0.9rem;
+        }
+        
+        &:hover {
+            background-color: #191919;
+            border: 1px solid #191919;
+            color: #F0EFE9;
+            transition: 0.3s ease-in-out;
+        }
+    }    
 }
 
 .why-choose-us { 
@@ -791,7 +798,7 @@ header {
         background-color: #F0EFE9;
         width: 54%;
         height: 60%;
-        bottom: 0;
+        bottom: 25px;
         right: 0;
         max-width: 100%;
         
@@ -882,6 +889,7 @@ header {
             margin-left: 20px;
             display: none;
             
+            
             @media (min-width: 1200px) {
                 display: block;
             }
@@ -949,6 +957,7 @@ header {
                 
                 &:hover .read-more {
                     font-weight: 900;
+                    transition: 0.3s ease-in-out;
                 }
                 
                 &:hover img {
@@ -1279,9 +1288,14 @@ header {
     padding-bottom: 80px;
     
     .squiggly-newsletter {
+        display: none;
         position: absolute;
         bottom: 50px;
         right: 0;
+        
+        @media (min-width: 776px) {
+            display: block;
+        }
     }
     
     .container {
@@ -1408,6 +1422,7 @@ footer {
                         
                         &:hover {
                             color: #707070;
+                            transition: 0.2s ease-in-out;
                         }
                     }
                 }
@@ -1435,8 +1450,10 @@ footer {
                 
                 &:hover {
                     color: #7c7c7c;
+                    transition: 0.2s ease-in-out;
                 }
             }
         }
     }
 }
+

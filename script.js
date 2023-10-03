@@ -1,3 +1,8 @@
+// Är medveten om att den inte ser ut precis som den skulle göra enligt mock-up men
+// jag valde att få den att fungera istället för att ha med ...9
+// Det ligger kod längre ner som är bortkommenterad som får det att se ut precis som designfilen
+// Men då fungerar inte koden korrekt. 
+
 const slider = document.getElementById('slider');
 const prev = document.getElementById('prev');
 const next = document.getElementById('next');
@@ -42,7 +47,6 @@ function updateSlider() {
     //     slidesHTML += `<div class="slide">...</div>`;
     // }
     
-    // Lägg till 9 som sista sida om det inte är tal 6 och inte om det är sista sidan
     // if (currentSlide !== 6) {
     //     slidesHTML += `<div class="slide">${maxSlide}</div>`;
     // }

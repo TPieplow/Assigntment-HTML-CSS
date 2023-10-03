@@ -29,6 +29,10 @@ body {
   opacity: 0;
   animation: fly-in-and-spin 2.5s cubic-bezier(0.275, 0.885, 0.32, 5.275) forwards;
   box-shadow: 0 0 10px rgba(36, 201, 187, 0.8);
+  transition: 0.2s;
+}
+.container .text a.spin-animation:hover {
+  box-shadow: 0 0 30px rgb(36, 201, 187);
 }
 @keyframes fly-in-and-spin {
   0% {
