@@ -20,14 +20,31 @@ body {
   justify-content: center;
   align-items: center;
 }
-.container .text a {
+.container .text a.spin-animation {
   text-decoration: none;
+  color: #00c3ff;
+  border: 1px solid #00c3ff;
+  margin-top: 20px;
+  transform: translateX(90%);
+  opacity: 0;
+  animation: fly-in-and-spin 2.5s cubic-bezier(0.275, 0.885, 0.32, 5.275) forwards;
+  box-shadow: 0 0 10px rgba(36, 201, 187, 0.8);
+}
+@keyframes fly-in-and-spin {
+  0% {
+    transform: transslateX(100%) rotate(0deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) rotate(360deg);
+    opacity: 1;
+  }
 }
 .container .loader {
   display: flex;
   flex-direction: row;
   gap: var(--size-2);
-  margin-top: 50px;
+  margin-top: 60px;
 }
 .container .loader span {
   --speed: 0.65;

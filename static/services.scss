@@ -22,10 +22,29 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
-        a {
+        
+        // https://www.w3schools.com/cssref/func_cubic-bezier.php
+        a.spin-animation {
             text-decoration: none;
+            color: #00c3ff;
+            border: 1px solid #00c3ff;
+            margin-top: 20px;
+            
+            transform: translateX(90%);
+            opacity: 0;
+            
+            animation: fly-in-and-spin 2.5s cubic-bezier(0.275, 0.885, 0.32, 5.275) forwards;
+            box-shadow: 0 0 10px rgba(36, 201, 187, 0.8);   
+        }
+    }
     
+    @keyframes fly-in-and-spin {
+        0% {transform: transslateX(100%) rotate(0deg);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(0) rotate(360deg);
+            opacity: 1;
         }
     }
     
@@ -33,31 +52,33 @@ body {
         display: flex;
         flex-direction: row;
         gap: var(--size-2);
-        margin-top: 50px;
-    }
-    
-    .loader span {
-        --speed: 0.65;
-        --count: 6;
-        --delay: calc(sin((var(--index) / var(--count)) * 55deg) * var(--speed) * -1s);
-        height: 3vmin;
-        width: 3vmin;
-        aspect-ratio: 1;
-        background: #ff00FF;
-        border-radius: 50%;
-        animation: jump calc(var(--speed) * 1s) var(--delay) infinite ease-in-out;
+        margin-top: 60px;
         
-        &::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            border-radius: inherit;
-            box-shadow: 0 0 10px rgba(255, 0, 255, 0.8);
+        // https://developer.mozilla.org/en-US/docs/Web/CSS/sin
+        span {
+            --speed: 0.65;
+            --count: 6;
+            --delay: calc(sin((var(--index) / var(--count)) * 55deg) * var(--speed) * -1s);
+            height: 3vmin;
+            width: 3vmin;
+            aspect-ratio: 1;
+            background: #ff00FF;
+            border-radius: 50%;
+            animation: jump calc(var(--speed) * 1s) var(--delay) infinite ease-in-out;
+            
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                border-radius: inherit;
+                box-shadow: 0 0 10px rgba(255, 0, 255, 0.8);
+            }
         }
     }
+    
     
     @keyframes jump {
         50% {
