@@ -20,7 +20,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-.container .text a.spin-animation {
+.container .text .spin-animation {
   text-decoration: none;
   color: #00c3ff;
   border: 1px solid #00c3ff;
@@ -31,7 +31,7 @@ body {
   box-shadow: 0 0 10px rgba(36, 201, 187, 0.8);
   transition: 0.2s;
 }
-.container .text a.spin-animation:hover {
+.container .text .spin-animation:hover {
   box-shadow: 0 0 30px rgb(36, 201, 187);
 }
 @keyframes fly-in-and-spin {
