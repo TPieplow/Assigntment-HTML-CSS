@@ -26,11 +26,12 @@ Här är en översikt över mappstrukturen för mitt projekt:
 - index.html: Huvudsida.
 - news.html: Nyhets/artikelsida.
 - contact.html: Kontaktsida.
+- services.html: Lekte lite med animations.
 
 ## Stil och layout
 Sidan använder SCSS för att definera stil och layout. Koden är strukturerad (enligt mig).
 
 ## JavaScript 
 Sidan innehåller även ett JavaScript för en bildkarusell i news.html, jag hade lite svårigheter att få till "..." så det är inte med. 
-Hade kunnat hårdkoda in det med HTML och CSS men blev klar relativt tidigt med hemsidan så jag har suttit och pillat lite med det istället. 
+Hade kunnat hårdkoda in det med HTML och CSS men valde att göra som jag gjorde istället.
 
