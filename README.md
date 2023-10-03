@@ -13,7 +13,6 @@ Jag hittade ett bra sätt som fungerade för mig, där jag allt som oftast satte
 - Beskrivning
 - Mappstruktur
 - Stil och layout
-- Användning
 
 ## Beskrivning
 Denna sida är utvecklad för att representera det fiktiva företaget Crito och dess verksamhet.
