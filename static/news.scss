@@ -2,19 +2,20 @@
 @use 'style.scss';
 
 
-
-
 .article-news {
   padding-bottom: 84px;
   
   .container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    text-align: left;
+
     
     .chevron-slider {
       display: flex;
       align-items: center;
+      justify-content: center;
+      text-align: center;
     }
     
     .chevron {
