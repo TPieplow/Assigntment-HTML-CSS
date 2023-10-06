@@ -1,13 +1,11 @@
-# Crito Webplats
-Denna sida är utvecklad som en del i min utbildning hos EC-utbildning. Det är den första delen som innefattar HTML & CSS.
+# **Crito Webplats**
+Denna webbplats utvecklades som en del i min utbildning hos EC-utbildning och omfattar HTML och CSS
 
 ## Svårigheter
-- Skulle inte säga att det har varit något som var direkt svårt, men däremot inser man att en god struktur är A och O när man bygger en hemsida, både när det gäller CSS/SCSS och HTML. Det är också väldigt praktiskt att sätta upp globala klasser som vi gjorde med section-title.
-- Tyckte även att det blev lite konstigt när jag la in separata scss filer för respektive html-sida, ibland svarade det direkt, men ibland fick jag lägga in ny kod för att det skulle fungera.
+Jag skulle inte säga att det var något direkt svårt, men det blev tydligt att en god struktur är avgörande när man bygger hem webbplats, både när det gäller CSS/SCSS men även HTML. Det var också praktiskt att använda globala klasser, som vi gjorde med 'section-title'. Jag upplevde att det blev lite konstigt när jag inkluderade SCSS-filer för varje HTML-sida. Ibland fungerade det direkt, men ibland var det nödvändigt att lägga till ny kod för att få det att fungera.
 
 ## Lärdomar
-Som jag nämnde ovan så är struktur och planering A & O när det kommer till att bygga upp en hemsida. 
-Jag hittade ett bra sätt som fungerade för mig, där jag allt som oftast satte grid som den yttre layouten, varpå jag lät flex göra jobbet i den inte layouten. 
+Som jag nämnt tidigare är **struktur och planering** avgörande när man bygger en webbplats. Jag fann ett sätt som fungerade bra för mig, där jag oftast använde _"grid"_ som den övergripande layouten och lät _"flex"_ hantera layouten i de inre elementen. 
 
 ## Innehåll
 - Beskrivning
@@ -20,18 +18,18 @@ Denna sida är utvecklad för att representera det fiktiva företaget Crito och 
 ## Mappstruktur
 Här är en översikt över mappstrukturen för mitt projekt:
 
-- SCSS: Innehåller SCSS/CSS-filer som definerar sidans stil. Jag har valt att lägga varje sidas scss i åtskilda filer, vilket egentligen inte behövs då det är en liten sida, men jag ville helt enkelt testa.
-- Images: Lagrar alla bilder som jag använt mig av.
-- Script: Innehåller JavaScript till bildkarusellen.
-- index.html: Huvudsida.
-- news.html: Nyhets/artikelsida.
-- contact.html: Kontaktsida.
-- services.html: Lekte lite med animations.
+- **SCSS**: Innehåller SCSS/CSS-filer som definerar sidans stil. Jag har valt att lägga varje sidas scss i åtskilda filer, vilket egentligen inte behövs då det är en liten sida, men jag ville helt enkelt testa.
+- **Images**: Lagrar alla bilder som jag använt.
+- **Script**: Innehåller JavaScript till bildkarusellen.
+- **index.html**: Huvudsida.
+- **news.html**: Nyhets/artikelsida.
+- **contact.html**: Kontaktsida.
+- **services.html**: Här lekte jag lite med animationer
 
 ## Stil och layout
-Sidan använder SCSS för att definera stil och layout. Koden är strukturerad (enligt mig).
+Sidan använder SCSS för att definera stil och layout. Koden är strukturerad enligt min preferens.
 
 ## JavaScript 
 Sidan innehåller även ett JavaScript för en bildkarusell i news.html, jag hade lite svårigheter att få till "..." så det är inte med. 
-Hade kunnat hårdkoda in det med HTML och CSS men valde att göra som jag gjorde istället.
+Jag hade kunnat hårdkoda det med HTML och CSS, men valde att göra det på det här sättet istället.
 
