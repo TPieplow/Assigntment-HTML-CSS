@@ -458,8 +458,7 @@ header .container .menu .main-menu .btn-login {
 }
 @media (min-width: 1200px) {
   .features-section .borders .advice {
-    padding-right: 25px;
-    margin-right: 25px;
+    margin-right: 20px;
     text-align: left;
   }
 }
@@ -470,6 +469,30 @@ header .container .menu .main-menu .btn-login {
          column-gap: 50px;
     row-gap: 45px;
   }
+}
+.features-section .borders .advice .icon-wrapper {
+  position: absolute;
+}
+.features-section .borders .advice .icon-wrapper .plus1 {
+  position: relative;
+  top: -75px;
+  left: 10px;
+  color: #191919;
+  font-size: 12px;
+}
+.features-section .borders .advice .icon-wrapper .plus2 {
+  position: relative;
+  top: -65px;
+  left: 20px;
+  color: #191919;
+  font-size: 12px;
+}
+.features-section .borders .advice .icon-wrapper .plus3 {
+  position: relative;
+  top: -40px;
+  left: 10px;
+  color: #191919;
+  font-size: 12px;
 }
 .features-section .borders .advice h3 {
   font-family: "DM Sans", sans-serif;
